@@ -1,6 +1,13 @@
-<div class="bg-white shadow sm:rounded-lg">
+<div class="bg-white px-6 py-12 sm:py-12 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h3 class="text-4xl font-bold tracking-tight text-gray-900">Cross-Site Scripting (XSS)</h3>
+    <p class="mt-6 text-lg leading-8 text-gray-600">It is a vulnerability enabling attackers to inject harmful code into a website. This code executes in a victim's browser, enabling the theft of sensitive data like login details</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Preventing XSS involves sanitizing user-generated content. Exemple using <code>sanitize(link_to("Click!", target))</code></p>
+  </div>
+</div>
+
+<div class="bg-white shadow sm:rounded-lg flex justify-center">
   <div class="px-4 py-5 sm:p-6">
-    <h3 class="text-base font-semibold leading-6 text-gray-900">Cross-Site Scripting (XSS)</h3>
     <div class="mt-2 max-w-xl text-sm text-gray-500">
       <p>Submit the following JS code: <code>javascript:alert('XSS Attack!')</code></p>
     </div>
