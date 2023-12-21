@@ -3,9 +3,9 @@
 one:
   username: Bobo
   email: bo@bo.co
-  amdin: false
+  admin: false
 
 two:
   username: Lolo
   email: lo@lo.co
-  amdin: true
+  admin: true
