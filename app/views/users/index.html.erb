@@ -2,6 +2,7 @@
   <div class="mx-auto max-w-2xl text-center">
     <h3 class="text-4xl font-bold tracking-tight text-gray-900">Params mass assignment</h3>
     <p class="mt-6 text-lg leading-8 text-gray-600">Here the params have not been correctly filtered. You have an opportunity to create admin users!</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Preventing this involve filtering the params. Exemple using <code>params.require(:user).permit(:username, :email)</code></p>
   </div>
 </div>
 
@@ -15,7 +16,7 @@
           <%= form.label :username, "username",  class:"sr-only" %>
           <%= form.text_field :username, placeholder:"username" , class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"%>
       </div>
-      <div class="w-full ml-3 sm:max-w-xs">
+      <div class="w-full mt-2 sm:mt-0 sm:ml-3 sm:max-w-xs">
           <%= form.label :email, "email",  class:"sr-only" %>
           <%= form.email_field :email, placeholder:"email" , class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"%>
       </div>
@@ -24,7 +25,7 @@
   </div>
 </div>
 
-<div class="max-w-4xl  mx-auto p-4 my-8 lg:my-24">
+<div class="max-w-4xl  mx-auto p-4 my-8">
   <div class="border-b border-gray-200 bg-white px-4 py-5 sm:px-6">
     <h3 class="text-base font-semibold leading-6 text-gray-900">Users</h3>
     <p class="mt-1 text-sm text-gray-500">List of your users.</p>
