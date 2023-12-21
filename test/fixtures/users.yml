@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: Bobo
+  email: bo@bo.co
+  admin: false
+
+two:
+  username: Lolo
+  email: lo@lo.co
+  admin: true
