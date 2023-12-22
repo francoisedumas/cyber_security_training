@@ -24,6 +24,9 @@
         <%= link_to users_path do %>
           <%= render "link", title: "Params", subtitle: "Leverage wrong params filtering" %>
         <% end %>
+        <%= link_to products_path do %>
+          <%= render "link", title: "SQL injection", subtitle: "Leverage direct DB interaction" %>
+        <% end %>
       </ul>
     </div>
   </div>
