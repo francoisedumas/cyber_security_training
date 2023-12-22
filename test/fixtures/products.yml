@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Apple
+
+two:
+  name: Banana
+
+three:
+  name: Pear
+
+four:
+  name: Peach
