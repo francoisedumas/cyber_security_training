@@ -1,0 +1,41 @@
+<%= content_for :header_link do %>
+  <a href="https://apidock.com/rails/String/html_safe" target="blank" class="text-sm font-semibold leading-6 text-gray-900">Plus d'info <span aria-hidden="true">&rarr;</span></a>
+<% end %>
+
+<div class="bg-white px-6 py-6 sm:py-6 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h3 class="text-4xl font-bold tracking-tight text-gray-900">Méthode html_safe avec Rails</h3>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Marque une chaîne comme sécurisée de confiance. Il sera inséré dans HTML sans qu'aucun échappement supplémentaire ne soit effectué.</p>
+  </div>
+</div>
+<div class="bg-white shadow sm:rounded-lg flex justify-center">
+  <div class="px-4 py-5 sm:p-6">
+    <div class="mt-2 max-w-xl text-sm text-gray-500">
+      <p>Imaginons que nous ayons besoin de créer une string avec des balises pour notre vue comme par exemple <code><%= @html_content %></code></p>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-col items-center p-4 my-4 gap-2 border-b-2">
+  <h3 class="text-base font-semibold leading-6 text-gray-900 my-2">Sans html_safe</h3>
+  <p><%= @html_content %></p>
+  <h3 class="text-base font-semibold leading-6 text-gray-900 my-2">Avec html_safe</h3>
+  <p><%= @html_content.html_safe %></p>
+</div>
+
+<details class="p-4 my-4">
+  <summary>Pour aller plus loin</summary>
+  <div class="border-b flex flex-col items-center border-gray-200 bg-white px-4 py-5 sm:px-6">
+    <h3 class="text-base font-semibold leading-6 text-gray-900">Pour info, par défaut rails "échappe" automatiquement le contenu</h3>
+    <p class="mt-1 text-sm text-gray-500">Exemple avec nos liens précedents</p>
+  </div>
+  <% if @links.any? %>
+    <div class="flex flex-col items-center gap-2">
+      <% @links.each do |link| %>
+        <p><%= link.target %></p>
+      <% end %>
+    </div>
+  <% else %>
+    <%= link_to 'Commencez par créer un lien', links_path, class: "mt-1 truncate text-xs leading-5 text-gray-500"%>
+  <% end %>
+</details>

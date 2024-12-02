@@ -20,6 +20,9 @@
         <%= link_to links_path do %>
           <%= render "link", title: "Xss", subtitle: "Injecter du javascript malveillant" %>
         <% end %>
+        <%= link_to htmlsafe_path do %>
+          <%= render "link", title: "HTML safe", subtitle: "Quand et comment utiliser html safe" %>
+        <% end %>
         <%= link_to users_path do %>
           <%= render "link", title: "Params", subtitle: "Tirez parti d'un filtrage des paramètres" %>
         <% end %>
