@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :links, only: %i[index create]
   resources :users, only: %i[index create]
   resources :products, only: %i[index]
+  post "/csp-violation-report", to: "csp_reports#create"
 end
