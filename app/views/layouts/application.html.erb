@@ -13,9 +13,6 @@
   </head>
 
   <body class="h-full font-sans antialiased font-normal leading-normal bg-white">
-    <%= javascript_tag nonce: true do -%>
-      alert('Hello, World!');
-    <% end -%>
     <div class="main flex flex-col">
       <%= render partial: "shared/flash" %>
       <%= render "shared/header" %>

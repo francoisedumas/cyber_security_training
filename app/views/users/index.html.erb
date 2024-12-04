@@ -1,15 +1,15 @@
 <div class="bg-white px-6 py-12 sm:py-12 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
     <h3 class="text-4xl font-bold tracking-tight text-gray-900">Params mass assignment</h3>
-    <p class="mt-6 text-lg leading-8 text-gray-600">Here the params have not been correctly filtered. You have an opportunity to create admin users!</p>
-    <p class="mt-6 text-lg leading-8 text-gray-600">Preventing this involve filtering the params. Exemple using <code>params.require(:user).permit(:username, :email)</code></p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Ici, les paramètres n'ont pas été correctement filtrés. Vous avez la possibilité de créer des utilisateurs admin !</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600">Pour éviter cela, il faut filtrer les paramètres. Exemple <code>params.require(:user).permit(:username, :email)</code></p>
   </div>
 </div>
 
 <div class="bg-white shadow sm:rounded-lg flex justify-center">
   <div class="px-4 py-5 sm:p-6">
     <div class="mt-2 max-w-xl text-sm text-gray-500">
-      <p>Find a way to submit this form and turn yourself admin! (tips &lt;input name="user[admin]" value="true"&gt;)</p>
+      <p>Trouvez un moyen de soumettre ce formulaire et de vous rendre administrateur ! (conseil &lt;input name="user[admin]" value="true"&gt;)</p>
     </div>
     <%= form_with model: @user, class:"mt-5 sm:flex sm:items-center" do |form| %>
       <div class="w-full sm:max-w-xs">
