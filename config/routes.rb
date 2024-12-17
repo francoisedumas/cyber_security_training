@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   root to: 'pages#home'
   get '/htmlsafe', to: 'htmlsafe#index'
   resources :links, only: %i[index create]
